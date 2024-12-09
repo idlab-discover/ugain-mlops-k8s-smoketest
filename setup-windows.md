@@ -22,15 +22,15 @@ We're using the [Windows Subsystem For Linux](https://en.wikipedia.org/wiki/Wind
    wsl --install -d Ubuntu-24.04
    ```
 
-   ![WSL install](img/wsl_install.png)
+   ![WSL install](images/wsl_install.png)
 
    - If you see an error regarding virtualization not being enabled. Go back to the top of this page and make sure to read the part "Make sure virtualization is turned on in your BIOS/UEFI".
   
-      ![WSL virtualization error](img/wsl_virtualization_error.png)
+      ![WSL virtualization error](images/wsl_virtualization_error.png)
 
 1. Choose a username and password (password characters are hidden, it looks like the password input stays blank).
-   
-   ![WSL success](img/wsl_success.png)
+
+   ![WSL success](images/wsl_success.png)
 
 ## Install development tools in Ubuntu WSL
 
@@ -45,8 +45,8 @@ Open a Ubuntu CLI and follow these instructions (go to Start menu > Ubuntu).
    > :warning: If you have network issues in WSL at this point, this might be due to your anti-virus. The firewall in Kaspersky, AVG and Avast sometimes block WSL from accessing the internet. We recommend to either configure the anti-virus to allow WSL network access or use Windows Defender instead.
    >
    > If you still have network issues, try running the following commands, one-by-one, and **restart your computer** afterwards:
-   > 
-   > ```
+   >
+   > ```shell
    > sudo rm /etc/resolv.conf
    > sudo bash -c 'echo "nameserver 1.1.1.1" > /etc/resolv.conf'
    > sudo bash -c 'echo "nameserver 8.8.8.8" >> /etc/resolv.conf'
@@ -55,8 +55,7 @@ Open a Ubuntu CLI and follow these instructions (go to Start menu > Ubuntu).
    > sudo bash -c 'echo "generateResolvConf = false" >> /etc/wsl.conf'
    > sudo chattr +i /etc/resolv.conf
    > ```
-   > 
-   
+   >
 
 1. Install the tools and docker runtime inside of WSL.
 
@@ -77,7 +76,7 @@ Open a Ubuntu CLI and follow these instructions (go to Start menu > Ubuntu).
 1. Install [Visual Studio Code (VSCode)](https://code.visualstudio.com) **on Windows**.
 1. Start VSCode and install the "WSL" extension in Visual Studio Code.
    
-   ![Code WSL extension](img/code_wsl_extension.png)
+   ![Code WSL extension](images/code_wsl_extension.png)
 
 > :warning: Close all the running Ubuntu CLI's after the VSCode installation has finished. This is needed to apply the VSCode PATH changes. 
 
