@@ -2,9 +2,14 @@
 
 This repository contains the necessary files to run the lab session about (Docker) containers and Kubernetes.
 
+## Initial setup
+
+* [How to install the required software on Windows.](setup-windows.md)
+
 ## Getting started
 
 Warning: opening the workspace devcontainer will create a new kind kubernetes cluster on your host system. If you already have a kind cluster with the name `ugain` that should not be deleted do not open this workspace!**
+
 1. Clone this repository to your computer using git.
 1. Open `lab-containers-smoketest.code-workspace` using Visual Studio Code.
 1. Choose "Yes, I trust the authors", so VSCode enables regular mode.
