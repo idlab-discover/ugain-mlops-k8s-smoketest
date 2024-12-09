@@ -1,0 +1,13 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+            "label": "start smoke test",
+            "type": "shell",
+            "command": "./smoketest.sh",
+            "args": [],
+            "isBackground": false,
+            "problemMatcher": [],
+        }
+	]
+}
