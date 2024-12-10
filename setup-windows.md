@@ -78,9 +78,9 @@ Open a Ubuntu CLI and follow these instructions (go to Start menu > Ubuntu).
    git config --global user.name "Your Name"
    ```
 
-1. Reboot your computer!
+1. **Now REBOOT your computer!**
 
-## Install Visual Studio Code
+## [after reboot] Install Visual Studio Code
 
 1. Install [Visual Studio Code (VSCode)](https://code.visualstudio.com) **on Windows**.
 1. Start VSCode and install the "WSL" extension in Visual Studio Code.
