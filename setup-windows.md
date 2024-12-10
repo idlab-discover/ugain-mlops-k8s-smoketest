@@ -63,6 +63,13 @@ Open a Ubuntu CLI and follow these instructions (go to Start menu > Ubuntu).
    sudo apt install git docker.io docker-compose -y
    ```
 
+1. Create the `docker` group (it is possible that the group already exists) and add your user to that group.
+
+   ```bash
+   sudo groupadd docker
+   sudo usermod -aG docker $USER
+   ```
+
 1. Configure git with your username and email.
 
    ```bash
@@ -71,12 +78,18 @@ Open a Ubuntu CLI and follow these instructions (go to Start menu > Ubuntu).
    git config --global user.name "Your Name"
    ```
 
+1. Reboot your computer!
+
 ## Install Visual Studio Code
 
 1. Install [Visual Studio Code (VSCode)](https://code.visualstudio.com) **on Windows**.
 1. Start VSCode and install the "WSL" extension in Visual Studio Code.
    
    ![Code WSL extension](images/code_wsl_extension.png)
+
+1. Install the "Dev Containers" extension in Visual Studio Code.
+   
+   ![Code Dev Containers extension](images/code_dev_container_extension.png)
 
 > :warning: Close all the running Ubuntu CLI's after the VSCode installation has finished. This is needed to apply the VSCode PATH changes. 
 

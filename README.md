@@ -12,6 +12,11 @@ This repository contains the necessary files to run the lab session about (Docke
 
 1. Clone this repository to your computer using git.
 1. Open `lab-containers-smoketest.code-workspace` using Visual Studio Code.
+
+   ```bash
+   code lab-containers-smoketest.code-workspace
+   ```
+
 1. Choose "Yes, I trust the authors", so VSCode enables regular mode.
 
    ![workspace-trust-dialog](images/workspace-trust-dialog.png)

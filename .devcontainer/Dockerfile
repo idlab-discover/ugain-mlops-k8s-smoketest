@@ -12,7 +12,9 @@ RUN sudo apt-get update > /dev/null \
 	# Arkade
 	&& curl -fsSL https://get.arkade.dev | sudo sh
 
-COPY --chmod=755 ./entrypoint.sh /entrypoint.sh
+COPY ./entrypoint.sh /entrypoint.sh
+
+RUN chmod 755 /entrypoint.sh
 
 COPY ./kind-cluster-config.yaml /kind-cluster-config.yaml
 
