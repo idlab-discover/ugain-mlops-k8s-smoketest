@@ -60,7 +60,7 @@ Open a Ubuntu CLI and follow these instructions (go to Start menu > Ubuntu).
 1. Install the tools and docker runtime inside of WSL.
 
    ```bash
-   sudo apt install git docker.io docker-composept install curl build-essential pkg-config cmake gcc g++ gdb git libboost-test-dev -y
+   sudo apt install git docker.io docker-compose -y
    ```
 
 1. Configure git with your username and email.
