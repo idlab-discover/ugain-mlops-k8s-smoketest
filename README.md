@@ -5,6 +5,8 @@ This repository contains the necessary files to run the lab session about (Docke
 ## Initial setup
 
 * [How to install the required software on Windows.](setup-windows.md)
+* [How to install the required software on Linux.](setup-linux.md)
+* [How to install the required software on Mac.](setup-mac.md)
 
 ## Getting started
 
