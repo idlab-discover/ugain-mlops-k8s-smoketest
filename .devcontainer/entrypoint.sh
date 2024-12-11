@@ -6,7 +6,7 @@ arkade get kind
 sudo mv ~/.arkade/bin/kind /usr/local/bin/
 sudo mv ~/.arkade/bin/kubectl /usr/local/bin/
 
-# kind delete cluster
+kind delete cluster --name ugain
 
 # 1. Create registry container unless it already exists
 reg_name='kind-registry'

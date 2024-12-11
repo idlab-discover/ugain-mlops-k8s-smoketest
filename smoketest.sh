@@ -35,14 +35,18 @@ fi
 
 echo "Downloading docker images.. this can take few minutes"
 
-docker pull anibali/pytorch:cuda-10.0
+images=( "anibali/pytorch:cuda-10.0" "prom/node-exporter:v1.8.2" "gcr.io/cadvisor/cadvisor:v0.50.0" "prom/prometheus:v2.54.1" "grafana/grafana:11.2.1" )
 
-if [ $? -eq 0 ]; then
-    echo "✅ image pulled"
-else
-    echo "❌ could not pull docker image"
+for image in "${images[@]}"
+do
+  docker pull $image
+  if [ $? -eq 0 ]; then
+    echo "✅ $image pulled"
+  else
+    echo "❌ could not pull docker image ($image)"
     exit 1
-fi
+  fi
+done
 
 echo "Checking is k8s cluster is running.." 
 
