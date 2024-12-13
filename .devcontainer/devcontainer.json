@@ -21,7 +21,7 @@
 		"ghcr.io/devcontainers/features/docker-outside-of-docker:1": {
 			"version": "latest",
 			"moby": true,
-			"dockerDashComposeVersion": "v2.24.6"
+			// "dockerDashComposeVersion": "v2.24.6"
 		}
 	},
 	// "forwardPorts": [8080],
