@@ -20,12 +20,9 @@
 	"features": {
 		"ghcr.io/devcontainers/features/docker-outside-of-docker:1": {
 			"version": "latest",
-			"moby": true
+			"moby": true,
+			"dockerDashComposeVersion": "v2.24.6"
 		}
-		// "ghcr.io/devcontainers/features/kubectl-helm-minikube:1": {
-		// 	"minikube": "none",
-		// 	"version": "latest"
-		// }
 	},
 	// "forwardPorts": [8080],
 	"postCreateCommand": "/entrypoint.sh",
