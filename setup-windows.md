@@ -60,7 +60,7 @@ Open a Ubuntu CLI and follow these instructions (go to Start menu > Ubuntu).
 1. Install the tools and docker runtime inside of WSL.
 
    ```bash
-   sudo apt install git docker.io docker-compose -y
+   sudo apt install git docker.io docker-compose docker-buildx -y
    ```
 
 1. Create the `docker` group (it is possible that the group already exists) and add your user to that group.
